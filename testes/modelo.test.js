@@ -37,7 +37,6 @@ test('Testando resposta a perguntas', () => {
   expect(modelo.get_num_respostas(0)).toBe(1);
   expect(modelo.get_num_respostas(1)).toBe(2);
   expect(modelo.get_num_respostas(2)).toBe(3);
-  const pergunta1 = modelo.get_respostas(0);
+  const pergunta1 = modelo.get_pergunta(0);
   expect(pergunta1.id_pergunta).toBe(0);
-
 });
