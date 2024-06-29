@@ -38,5 +38,5 @@ test('Testando resposta a perguntas', () => {
   expect(modelo.get_num_respostas(1)).toBe(2);
   expect(modelo.get_num_respostas(2)).toBe(3);
   const resposta1 = modelo.get_respostas(0);
-  expect(resposta1.length).toBe(1);
+  expect(resposta1[0].texto).toBe('1 + 1 = 2');
 });
