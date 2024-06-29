@@ -35,6 +35,6 @@ test('Testando resposta a perguntas', () => {
   modelo.cadastrar_resposta(2,'3 + 3 = 7');
   modelo.cadastrar_resposta(2,'3 + 3 = 8');
   expect(modelo.get_num_respostas(0)).toBe(1);
-  expect(modelo.get_num_respostas(0)).toBe(2);
-  expect(modelo.get_num_respostas(0)).toBe(3);
+  expect(modelo.get_num_respostas(1)).toBe(2);
+  expect(modelo.get_num_respostas(2)).toBe(3);
 });
